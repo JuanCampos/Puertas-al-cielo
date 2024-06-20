@@ -48,6 +48,7 @@ body {
 @media screen and (min-width: 360px) {
     body {
         background-position: center;
+        padding-bottom: 80px;
     }
 
     .titulo {
