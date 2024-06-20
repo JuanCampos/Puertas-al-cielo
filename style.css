@@ -88,6 +88,7 @@ body {
     cursor: pointer;
     outline: none;
     padding: 10px;
+    position: relative;
 }
 
 .nav-toggle .hamburger,
@@ -97,23 +98,27 @@ body {
     height: 3px;
     background-color: rgb(232, 218, 239);
     display: block;
-    position: relative;
+    position: absolute;
     transition: all 0.3s;
+}
+
+.nav-toggle .hamburger {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .nav-toggle .hamburger::before,
 .nav-toggle .hamburger::after {
     content: '';
-    position: absolute;
-    left: 0;
 }
 
 .nav-toggle .hamburger::before {
-    transform: translateY(-10px);
+    top: -10px;
 }
 
 .nav-toggle .hamburger::after {
-    transform: translateY(10px);
+    top: 10px;
 }
 
 .nav-toggle.active .hamburger {
@@ -121,11 +126,13 @@ body {
 }
 
 .nav-toggle.active .hamburger::before {
-    transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(45deg);
+    top: 0;
 }
 
 .nav-toggle.active .hamburger::after {
-    transform: rotate(-45deg) translate(5px, -5px);
+    transform: rotate(-45deg);
+    top: 0;
 }
 
 @media (max-width: 768px) {
@@ -160,7 +167,6 @@ body {
         display: flex;
     }
 }
-
 
 main {
     padding-top: 90px;
