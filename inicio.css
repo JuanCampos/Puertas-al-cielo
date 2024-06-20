@@ -1,0 +1,117 @@
+.home{
+    width: 100%;
+    height: 90vh;
+    background-image: url(/img/puertas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedor{
+    width: 100%;
+}
+
+
+.titulo{
+    text-align: center;
+    font-size: 100px;
+    position: relative;
+    top: 40%;
+}
+
+.seccion{
+    width: 50%;
+    margin: 40px 5% 0 5%;
+    padding: 5%;
+    color: rgb(74, 35, 90);
+    text-align: center;
+    background-color: rgb(210, 180, 222);
+    border-radius: 40px;
+}
+
+.subtitulo{
+    font-size: 30px;
+}
+
+.lista{
+    list-style: none;
+}
+
+
+
+@media screen and (min-width: 360px) and (max-width: 767px){
+    body {
+        background-position: center;
+    }
+
+    .titulo {
+        font-size: 50px;
+    }
+    
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .seccion {
+        text-align: center;
+        width: 70%;
+        margin-top: 20px;
+        border: solid;
+        border-color: rgb(187, 143, 206);
+        border-radius: 40px;
+        padding: 15px;
+    }
+
+    .imagen{
+    width: 90%;
+    margin-top: 10px;
+    border-radius: 50px;
+    border-bottom: solid;
+    border-right: solid;
+    border-color: rgb(85, 85, 85);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 819px) {
+    .titulo {
+        font-size: 60px;
+    }
+    
+    .contenedor {
+        display: flex;
+        width: 100%;
+    }
+    
+    .seccion {
+        text-align: center;
+        width: 80%;
+        margin: 20px 20px;
+    }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1023px) {
+    .titulo {
+        font-size: 70px;
+    }
+    
+    .seccion {
+        text-align: center;
+        width: 50%;
+        margin: 20px 6px;
+        border-radius: 40px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .titulo {
+        font-size: 100px;
+    }
+    
+    .contenedor {
+        width: 100%;
+        display: flex;
+    }
+}
